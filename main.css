@@ -1,6 +1,9 @@
  body{
-     background-color: #9EBCFF
-    }
+        background-image: url("gradienta.jpg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+ }
     body > div{
         display: inline-block; 
         margin-top: 130px; 
