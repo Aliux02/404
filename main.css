@@ -1,9 +1,9 @@
- body{
+ /* body{
         background-image: url("gradienta.jpg");
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
- }
+ } */
     body > div{
         display: inline-block; 
         margin-top: 130px; 
@@ -43,4 +43,12 @@
          color: seagreen; 
          background-color: #FFE735; 
          padding: 5px;
+        }
+
+        #backgr {
+            position: fixed;
+            z-index:-1;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
