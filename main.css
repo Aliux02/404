@@ -1,9 +1,19 @@
+<<<<<<< Updated upstream
  /* body{
         background-image: url("gradienta.jpg");
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
  } */
+=======
+ body{
+     background-color: antiquewhite;
+     background-image: url("gradienta.jpg");
+     background-position: center;
+     background-size: 100%;
+     background-repeat: no-repeat;
+ }
+>>>>>>> Stashed changes
     body > div{
         display: inline-block; 
         margin-top: 130px; 
@@ -24,7 +34,7 @@
          width: 100%; 
          font-size: 70px; 
          color: #404040;
-     }   
+    }   
      p:nth-of-type(1) {
          display: inline-block;
          width: 100%; font-size: 18px; 
