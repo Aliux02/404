@@ -1,64 +1,42 @@
-<<<<<<< Updated upstream
- /* body{
-        background-image: url("gradienta.jpg");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
- } */
-=======
- body{
-     background-color: antiquewhite;
-     background-image: url("gradienta.jpg");
-     background-position: center;
-     background-size: 100%;
-     background-repeat: no-repeat;
- }
->>>>>>> Stashed changes
-    body > div{
-        display: inline-block; 
-        margin-top: 130px; 
-        margin-left: 20%
+body{
+background-image: url("gradienta.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+margin: 0%;
+}
+    div {
+    display: inline-block; 
+    width: 500px;  
+    text-align: center;  
+    float: right;
+    margin-top: 150px;
+    margin-right: calc( 50% - 250px )
     }
-     img {
-         width: 25%; 
-         display: inline-block
+        h1 {
+        display: inline-block;
+        width: 100%; 
+        font-size: 70px; 
+        color: #404040;
+        }   
+        p:nth-of-type(1) {
+        display: inline-block;
+        width: 100%; font-size: 18px; 
+        color: #FF3542;
         }
-     div > div {
-         display: inline-block; 
-         width: 40%;  text-align: center;  
-         float: right;
-         margin-right: 25%
+        p:nth-of-type(2) {
+        display: inline-block; 
+        width: 100%; 
+        font-size: 15px; 
+        color: #1E65FF;
+        font-family: fantasy;
         }
-     h1 {
-         display: inline-block;
-         width: 100%; 
-         font-size: 70px; 
-         color: #404040;
-    }   
-     p:nth-of-type(1) {
-         display: inline-block;
-         width: 100%; font-size: 18px; 
-         color: #FF3542;
-        }
-     p:nth-of-type(2) {
-         display: inline-block; 
-         width: 100%; 
-         font-size: 15px; 
-         color: #1E65FF;
-        }
-     a {
-         display: inline-block; 
-         font-size: 20px;
-         text-decoration: none;
-         color: seagreen; 
-         background-color: #FFE735; 
-         padding: 5px;
-        }
-
-        #backgr {
-            position: fixed;
-            z-index:-1;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+        a {
+        display: inline-block; 
+        font-size: 20px;
+        text-decoration: none;
+        color: seagreen; 
+        background-color: #FFE735; 
+        padding: 5px;
         }
