@@ -1,42 +1,55 @@
-body{
-background-image: url("gradienta.jpg");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-min-height: 100vh;
-margin: 0%;
+.progress-bar {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
 }
-    div {
-    display: inline-block; 
-    width: 500px;  
-    text-align: center;  
-    float: right;
-    margin-top: 150px;
-    margin-right: calc( 50% - 250px )
+    .progress-bar:last-child {
+        margin-bottom: 0;
     }
-        h1 {
+    .progress-bar > .top {
         display: inline-block;
-        width: 100%; 
-        font-size: 70px; 
-        color: #404040;
-        }   
-        p:nth-of-type(1) {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+        .progress-bar > .top > .label {
+            display: inline-block;
+            float: left;
+        }
+        .progress-bar > .top > .value {
+            display: inline-block;
+            float: right;
+        }
+    .progress-bar > .bar {
         display: inline-block;
-        width: 100%; font-size: 18px; 
-        color: #FF3542;
+        width: 100%;
+        height: 10px;
+        background-color: #ccc;
+        text-align: left;
+    }
+        .progress-bar > .bar > .value {
+            display: inline-block;
+            width: 85%;
+            height: 100%;
         }
-        p:nth-of-type(2) {
-        display: inline-block; 
-        width: 100%; 
-        font-size: 15px; 
-        color: #1E65FF;
-        font-family: fantasy;
-        }
-        a {
-        display: inline-block; 
-        font-size: 20px;
-        text-decoration: none;
-        color: seagreen; 
-        background-color: #FFE735; 
-        padding: 5px;
-        }
+            .progress-bar > .bar > .value > .loader {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background-color: #36f;
+                animation: loading 3s linear forwards;
+            }
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    10% {
+        width: 20%;
+    }
+    70% {
+        width: 65%;
+    }
+    100% {
+        width: 100%;
+    }
+}
